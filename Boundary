@@ -1,0 +1,19 @@
+import java.io.*;
+class boundary
+{
+    public static void main() throws IOException
+    {
+        InputStreamReader pk=new InputStreamReader(System.in);
+        BufferedReader in=new BufferedReader(pk);
+        System.out.println("ENTER THE LIMIT IN THE ARRAY");
+        int n=Integer.parseInt(in.readLine());
+        int a[][]=new int[n][n];
+        System.out.println("Enter"+(n*n)+" number in the array");
+        for(int r=0;r<n;r++)
+        {
+            for(int c=0;c<n;c++)
+              {
+                 a[r][c]=Integer.parseInt(in.readLine());
+              }
+        }
+        
