@@ -16,4 +16,25 @@ class boundary
                  a[r][c]=Integer.parseInt(in.readLine());
               }
         }
-        
+        for(int r=0;r<n;r++)
+        {
+            if(r==0||r==(n-1))
+            {
+                for(int c=0;c<n;c++)
+                {
+                    System.out.print(a[r][c]+"\t");
+                }
+            }
+            else
+            {
+                System.out.print(a[r][0]+"\t");
+                for(int s=1;s<=n-2;s++)
+                {
+                    System.out.print("\t");
+                }
+                System.out.print(a[r][n-1]);
+            }
+            System.out.println();
+        }
+    }
+}// end of main()
